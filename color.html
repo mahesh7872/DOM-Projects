@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <script>
+        document.addEventListener('DOMContentLoaded' , function(){
+    // color h1 to red
+    document.querySelectorAll('button').forEach(function (button){
+        button.onclick = function (){
+         document.querySelector('h1').style.color = button.dataset.color;
+         }
+    });
+    
+ });
+    </script>
+</head>
+<body>
+    <div class="cont">
+        <h1> Hello JavaScript... !!!</h1>
+        <button data-color = "red"> Red</button>
+        <button data-color = "yellow"> Yellow</button>
+        <button data-color = "violet"> Violet</button>
+        <!-- <form action=""> 
+            <input autofocus required type="text" name="" placeholder="Enter name" id="name">
+            <button type="submit" value="">Submit </button>
+        </form> -->
+
+
+        <!-- <button >Counter</button> -->
+        <!-- <h1> Function Practice Questons 10</h1> -->
+    </div>
+
+    
+    
+</body>
+</html>
